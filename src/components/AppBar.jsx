@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
 import { StyleSheet, Text, View } from 'react-native';
-=======
-import { StyleSheet, View, Text } from 'react-native';
->>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
 
 export default function AppBar() {
   return (
@@ -16,11 +12,7 @@ export default function AppBar() {
   );
 }
 
-<<<<<<< HEAD
 const styles=StyleSheet.create({
-=======
-const styles = StyleSheet.create({
->>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
   appbar: {
     width: '100%',
     height: 104,
