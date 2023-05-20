@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import { StyleSheet, Text, View, TouchableOpacity, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
@@ -14,10 +15,19 @@ export default function MemoList() {
           navigation.navigate('MemoDetail');
         }}
       >
+=======
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function MemoList() {
+  return (
+    <View>
+      <View style={styles.memoListItem}>
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
         <View>
           <Text style={styles.memoListItemTitle}>買い物リスト</Text>
           <Text style={styles.memoListItemDate}>2020年12月24日 10:00</Text>
         </View>
+<<<<<<< HEAD
         <TouchableOpacity
         style={styles.memoDelete}
           onPress={() => {
@@ -67,6 +77,36 @@ export default function MemoList() {
           <Icon name="delete" size={24} color="#B0B0B0" />
         </TouchableOpacity>
       </TouchableOpacity>
+=======
+        <View>
+          <Text>X</Text>
+        </View>
+      </View>
+
+      <View>
+        <View style={styles.memoListItem}>
+          <View>
+            <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+            <Text style={styles.memoListItemDate}>2020年12月24日 10:00</Text>
+          </View>
+          <View>
+            <Text>X</Text>
+          </View>
+        </View>
+      </View>
+
+      <View>
+        <View style={styles.memoListItem}>
+          <View>
+            <Text style={styles.memoListItemTitle}>買い物リスト</Text>
+            <Text style={styles.memoListItemDate}>2020年12月24日 10:00</Text>
+          </View>
+          <View>
+            <Text>X</Text>
+          </View>
+        </View>
+      </View>
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
     </View>
   );
 }
@@ -91,7 +131,10 @@ const styles = StyleSheet.create({
     lineHeight: 16,
     color: '#848484',
   },
+<<<<<<< HEAD
   memoDelete: {
     padding: 8,
   },
+=======
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
 });

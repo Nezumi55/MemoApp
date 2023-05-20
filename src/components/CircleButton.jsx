@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { StyleSheet, TouchableOpacity } from 'react-native';
 import { string, shape, func } from 'prop-types';
@@ -10,10 +11,23 @@ export default function CircleButton(props) {
     <TouchableOpacity style={[styles.circleButton, style]} onPress={onPress}>
       <Icon name={name} size={40} color="white" />
     </TouchableOpacity>
+=======
+import { string } from 'prop-types';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function CircleButton(props) {
+  const { children } = props;
+  return (
+    <View style={styles.circleButton}>
+      <Text style={styles.circleButtonLabel}>{children}</Text>
+    </View>
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
   );
 }
 
 CircleButton.propTypes = {
+<<<<<<< HEAD
   style: shape(),
   name: string.isRequired,
   onPress: func,
@@ -22,6 +36,9 @@ CircleButton.propTypes = {
 CircleButton.defaultProps = {
   style: null,
   onPress: null,
+=======
+  children: string.isRequired,
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
 };
 
 const styles = StyleSheet.create({
@@ -39,7 +56,11 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.25,
     shadowRadius: 8,
+<<<<<<< HEAD
     elevation: 8,
+=======
+    elevation: 8, // Android用の影
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
   },
   circleButtonLabel: {
     color: '#ffffff',

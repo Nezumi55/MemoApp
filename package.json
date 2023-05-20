@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@expo/metro-config": "^0.7.1",
     "@expo/vector-icons": "^13.0.0",
     "@react-native-community/masked-view": "^0.1.11",
@@ -24,11 +25,27 @@
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0"
+=======
+    "expo": "^47.0.14",
+    "expo-status-bar": "~1.4.4",
+    "expo-updates": "~0.15.6",
+    "prop-types": "^15.8.1",
+    "react": "^18.1.0",
+    "react-native": "0.70.8"
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "eslint": "^8.40.0",
+<<<<<<< HEAD
     "eslint-plugin-react": "^7.32.2"
+=======
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
+>>>>>>> c7b4b0fe9114f53ad0bd295478f61605c539adf4
   },
   "private": true
 }
