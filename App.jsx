@@ -15,13 +15,16 @@ import SignUpScreen from './src/screens/SignUpScreen';
 
 import { firebaseConfig } from './env';
 
-const Stack = createStackNavigator();
+/* eslint-disable-next-line */
+require('firebase/compat/firestore');
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig);
 } else {
   firebase.app();
 }
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (

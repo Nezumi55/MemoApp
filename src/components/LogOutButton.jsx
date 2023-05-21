@@ -1,10 +1,10 @@
 import React from 'react';
-import { StyleSheet, Text, TouchableOpacity,Alert } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, Alert } from 'react-native';
 import firebase from 'firebase/compat/app';
 import { useNavigation } from '@react-navigation/native';
 
 export default function LogOutButton() {
-    const navigation = useNavigation();
+  const navigation = useNavigation();
 
   function handlePress() {
     firebase
