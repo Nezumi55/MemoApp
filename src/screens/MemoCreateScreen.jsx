@@ -3,12 +3,14 @@ import {
   StyleSheet,
   View,
   TextInput,
+  Alert,
 } from 'react-native';
 
 import firebase from 'firebase/compat/app';
 
 import CircleButton from '../components/CircleButton';
 import KeyboardSafeView from '../components/KeyboardSafeView';
+import { translateErrors } from '../utils';
 
 export default function MemoCreateScreen(props) {
   const { navigation } = props;
@@ -29,6 +31,8 @@ export default function MemoCreateScreen(props) {
       })
       .catch((error) => {
         console.log('Error!', error);
+        const errorMsg = translateErrors(error.code);
+        Alert.alert(errorMsg.title, errorMsg.description);
       });
   }
 

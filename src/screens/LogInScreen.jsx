@@ -11,6 +11,8 @@ import firebase from 'firebase/compat/app';
 
 import Button from '../components/Button';
 import Loading from '../components/Loading';
+import { translateErrors } from '../utils';
+
 // eslint-disable-next-line no-unused-vars
 import signInWithEmailAndPassword from 'firebase/compat/auth';
 
@@ -27,7 +29,7 @@ export default function LogInScreen(props) {
           index: 0,
           routes: [{ name: 'MemoList' }],
         });
-      }else{
+      } else {
         setIsLoading(false);
       }
     });
@@ -48,7 +50,8 @@ export default function LogInScreen(props) {
         });
       })
       .catch((error) => {
-        Alert.alert(error.code);
+        const errorMsg = translateErrors(error.code);
+        Alert.alert(errorMsg.title, errorMsg.description);
       })
       .then(() => {
         setIsLoading(false);

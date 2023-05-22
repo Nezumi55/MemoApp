@@ -1,4 +1,5 @@
 import React from 'react'
+import{LogBox} from 'react-native'
 import { NavigationContainer } from '@react-navigation/native';
 import {
   createStackNavigator,
@@ -25,6 +26,7 @@ if (firebase.apps.length === 0) {
 }
 
 const Stack = createStackNavigator();
+LogBox.ignoreLogs(['Setting a timer']);
 
 export default function App() {
   return (

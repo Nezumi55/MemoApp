@@ -8,6 +8,9 @@ import {
   Alert,
 } from 'react-native';
 import firebase from 'firebase/compat/app';
+
+import { translateErrors } from '../utils';
+
 // eslint-disable-next-line no-unused-vars
 import createUserWithEmailAndPassword from 'firebase/compat/auth';
 
@@ -32,7 +35,8 @@ export default function SignUpScreen(props) {
       })
       .catch((error) => {
         console.log(error.code, error.message);
-        Alert.alert(error.code);
+        const errorMsg = translateErrors(error.code);
+        Alert.alert(errorMsg.title, errorMsg.description);
       });
   }
 
